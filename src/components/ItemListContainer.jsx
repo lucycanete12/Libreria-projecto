@@ -1,9 +1,12 @@
-const Salute = () => {
+import "./styles.css"
+
+function ItemListContainer(props) {
+    const greeting = props.greeting;
     return (
-    <p 
-    style={{marginLeft: 15}}>Bienvenidos
-    </p>
-    )
+        <div className="item-list-container">
+            <p>{greeting}</p>
+        </div>
+    );
 }
 
-export default ItemListContainer
+export default ItemListContainer;
